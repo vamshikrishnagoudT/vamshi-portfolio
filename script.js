@@ -66,14 +66,14 @@ const timeline = [
     description: "Developed fullstack tools like AI Voice Bot, Post Fetcher, and more."
   },
   {
-    date: "2020 – 2023",
     title: "B.Tech in Computer Science @ JNTUH",
-    description: "Graduated with CGPA 7.0. Worked on academic and independent real-world projects."
+    date: "St. Mary’s Group of Institutions, Hyderabad |2020 – 2023",
+    description: "Graduated with a CGPA of 7.0. Worked on both academic and independent real-world projects, gaining practical experience in software development and computer science concepts"
   },
   {
-    date: "2017 – 2020",
     title: "Diploma in Computer Science @ SBTET",
-    description: "Polytechnic with CGPA 6.5."
+    date: "VMR Polytechnic, Warangal | 2017 – 2020",
+    description: "Completed diploma with a CGPA of 6.5, building a strong foundation in computer science and technical skills"
   }
 ];
 
