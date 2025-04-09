@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vamshi Krishna | Backend Developer</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vamshi Krishna Thodeti</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <button id="theme-toggle" onclick="toggleTheme()">🌓</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <img src="assets/images/profile.jpg" alt="Vamshi Krishna" class="profile-pic" loading="lazy" />
+      <h1>Hello, I'm <span class="highlight">Vamshi Krishna</span></h1>
+      <p id="rotating-text">Backend Developer</p>
+      <a href="assets/Vamshi_Krishna_backend_Resume.pdf" download class="resume-btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p id="animated-about">
+      <!-- Filled with animation via script.js -->
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="filter-tabs">
+      <button class="tab active" onclick="filterProjects('all')">All</button>
+      <button class="tab" onclick="filterProjects('backend')">Backend</button>
+      <button class="tab" onclick="filterProjects('fullstack')">Fullstack</button>
+    </div>
+    <div class="project-grid" id="project-grid"></div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- SKILLS (UPGRADED STYLE) -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-grid" id="skills-list">
+      <!-- JS injects circular charts -->
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" data-aos="fade-up">
+    <h2>My Journey</h2>
+    <div class="timeline" id="timeline-container">
+      <!-- Timeline content generated via JS -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" data-aos="fade-up">
+    <form action="https://formspree.io/f/xwplakzk" method="POST" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+    
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Vamshi Krishna. Made with 🧠 & ☕</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        color: { value: "#00e6e6" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00e6e6",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "grab" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
