@@ -341,10 +341,6 @@ body.light .personal-info strong {
   box-shadow: 0 0 25px rgba(0, 230, 230, 0.4);
   transform: scale(1.01);
 }
-body, html {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
 
 
@@ -415,26 +411,5 @@ body.light .skill-chart::before {
   }
   .project-card {
     width: 100%;
-  }
-}
-
-/* 🔧 Responsive adjustments for personal section */
-@media (max-width: 768px) {
-  .personal-info {
-    padding: 1.5rem;
-    font-size: 0.95rem;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 1.5rem auto;
-    border-radius: 10px;
-  }
-
-  #personal h2 {
-    font-size: 1.5rem;
-  }
-
-  .personal-info div {
-    word-wrap: break-word;
-    line-height: 1.6;
   }
 }
