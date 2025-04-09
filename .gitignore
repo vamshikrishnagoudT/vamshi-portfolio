@@ -1,0 +1,21 @@
+# .gitignore
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Node / Python (if you ever add backend)
+node_modules/
+venv/
+__pycache__/
+
+# Logs
+*.log
+
+# OS metadata
+.env
+*.zip

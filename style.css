@@ -298,6 +298,51 @@ form button {
   text-align: center;
   margin-top: 1.5rem;
 }
+/* PERSONAL DETAILS */
+/* PERSONAL DETAILS – matches glowing dark glass style */
+#personal {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.personal-info {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+  padding: 2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 230, 230, 0.2);
+  box-shadow: 0 0 15px rgba(0, 230, 230, 0.15);
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  transition: background 0.3s ease;
+  font-size: 1.05rem;
+}
+
+.personal-info strong {
+  color: #00e6e6;
+  font-weight: 600;
+}
+
+/* Light Theme Support */
+body.light .personal-info {
+  background: #f9f9f9;
+  color: #111;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+body.light .personal-info strong {
+  color: #008080;
+}
+.personal-info:hover {
+  box-shadow: 0 0 25px rgba(0, 230, 230, 0.4);
+  transform: scale(1.01);
+}
+
+
 
 /* === FOOTER === */
 footer {
