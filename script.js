@@ -18,7 +18,8 @@ const skills = [
   { name: "REST APIs", level: 90 },
   { name: "Docker", level: 80 },
   { name: "PostgreSQL", level: 85 },
-  { name: "Celery + Redis", level: 80 }
+  { name: "Celery + Redis", level: 80 },
+  { name: "FastAPI", level: 70 }
 ];
 
 const projects = [
