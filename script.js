@@ -10,7 +10,7 @@ const rotatingTexts = [
   "Automation Addict 🤖"
 ];
 
-const aboutMeText = `Backend Developer with 1.6+ years of experience in Python, Django, REST APIs, and production deployments. Passionate about scalable systems, secure backends, and clean architecture. I enjoy solving real-world problems with clean and efficient code.`;
+const aboutMeText = `Backend Developer with 1.8+ years of experience in Python, Django, REST APIs, and production deployments. Passionate about scalable systems, secure backends, and clean architecture. I enjoy solving real-world problems with clean and efficient code.`;
 
 const skills = [
   { name: "Python", level: 95 },
