@@ -4,22 +4,24 @@
 
 const rotatingTexts = [
   "Backend Developer",
+  "Enterprise API Gateway Engineer",
+  "Java | Spring Boot | AWS",
   "Python | Django | REST APIs",
-  "Docker | Celery | PostgreSQL",
-  "Clean Code Enthusiast 🧼",
-  "Automation Addict 🤖"
+  "Production Support Engineer"
 ];
 
-const aboutMeText = `Backend Developer with 1.8+ years of experience in Python, Django, REST APIs, and production deployments. Passionate about scalable systems, secure backends, and clean architecture. I enjoy solving real-world problems with clean and efficient code.`;
+const aboutMeText = `Backend Developer with around 3 years of experience in Enterprise API Gateway support, Python, Django, REST APIs, Java, Spring Boot and AWS. Experienced in troubleshooting production issues, API integrations, authentication, monitoring and scalable backend applications. Passionate about building reliable backend systems and solving real-world technical problems.`;
 
 const skills = [
   { name: "Python", level: 95 },
   { name: "Django/DRF", level: 90 },
-  { name: "REST APIs", level: 90 },
-  { name: "Docker", level: 80 },
+  { name: "Java / Spring Boot", level: 85 },
+  { name: "REST APIs", level: 92 },
+  { name: "AWS Cloud", level: 80 },
+  { name: "Docker", level: 82 },
   { name: "PostgreSQL", level: 85 },
   { name: "Celery + Redis", level: 80 },
-  { name: "FastAPI", level: 70 }
+  { name: "JWT & Security", level: 88 }
 ];
 
 const projects = [
@@ -57,31 +59,35 @@ const projects = [
 
 const timeline = [
   {
-    date: "Aug 2023 – Present",
-    title: "Backend Developer @ AG Consulting",
-    description: "Built secure REST APIs, deployed with Docker, CI/CD via Railway."
+    date: "June 2025 – Present",
+    title: "Associate Software Engineer @ Infor Private Limited",
+    description: "Supporting Infor API Gateway, REST API testing with Postman, troubleshooting, log analysis using Sumo Logic, AWS monitoring, and production issue resolution."
+  },
+  {
+    date: "Aug 2023 – May 2025",
+    title: "Backend Developer @ AG Consulting Services",
+    description: "Developed REST APIs using Django, implemented JWT Authentication & RBAC, worked with PostgreSQL, Docker, and built CRM, Billing & Inventory applications."
   },
   {
     date: "2022 – 2023",
-    title: "Projects & Internships",
-    description: "Developed fullstack tools like AI Voice Bot, Post Fetcher, and more."
+    title: "Projects & Self-Learning",
+    description: "Developed fullstack tools including AI Voice Bot, Instagram Post Fetcher, and various backend systems."
   },
   {
     title: "B.Tech in Computer Science @ JNTUH",
-    date: "St. Mary’s Group of Institutions, Hyderabad |2020 – 2023",
-    description: "Graduated with a CGPA of 7.0. Worked on both academic and independent real-world projects, gaining practical experience in software development and computer science concepts"
+    date: "St. Mary’s Group of Institutions, Hyderabad | 2020 – 2023",
+    description: "Graduated with a CGPA of 7.0. Gained practical experience through academic and independent real-world projects."
   },
   {
     title: "Diploma in Computer Science @ SBTET",
     date: "VMR Polytechnic, Warangal | 2017 – 2020",
-    description: "Completed diploma with a CGPA of 6.5, building a strong foundation in computer science and technical skills"
+    description: "Completed with CGPA 6.5, building strong foundation in programming and technical skills."
   }
 ];
 
 // ------------------------
 // Render: Hero Rotating Text
 // ------------------------
-
 const rotatingTextEl = document.getElementById("rotating-text");
 let currentIndex = 0;
 function rotateText() {
@@ -97,7 +103,6 @@ rotateText();
 // ------------------------
 // About Section Typing
 // ------------------------
-
 const aboutEl = document.getElementById("animated-about");
 let aboutAnimated = false;
 function animateAbout() {
@@ -121,7 +126,6 @@ function animateAbout() {
 // ------------------------
 // Render: Projects
 // ------------------------
-
 const projectContainer = document.getElementById("project-grid");
 projects.forEach(project => {
   const card = document.createElement("div");
@@ -134,7 +138,6 @@ projects.forEach(project => {
 // ------------------------
 // Render: Timeline
 // ------------------------
-
 const timelineContainer = document.getElementById("timeline-container");
 timeline.forEach(item => {
   const wrapper = document.createElement("div");
@@ -168,7 +171,6 @@ timeline.forEach(item => {
 // ------------------------
 // Render: Skills (Circular Charts)
 // ------------------------
-
 const skillsContainer = document.getElementById("skills-list");
 skills.forEach(skill => {
   const wrapper = document.createElement("div");
@@ -196,7 +198,6 @@ skills.forEach(skill => {
 // ------------------------
 // Animate: Circular Charts
 // ------------------------
-
 let skillsAnimated = false;
 function animateSkills() {
   if (skillsAnimated) return;
@@ -225,7 +226,6 @@ function animateSkills() {
 // ------------------------
 // Interactivity
 // ------------------------
-
 function toggleMenu() {
   document.getElementById("nav-links").classList.toggle("active");
 }
@@ -250,6 +250,7 @@ function openModal(title, description) {
   document.getElementById("modal-description").innerText = description;
   document.getElementById("project-modal").style.display = "flex";
 }
+
 function closeModal() {
   document.getElementById("project-modal").style.display = "none";
 }
@@ -258,6 +259,7 @@ function toggleTheme() {
   document.body.classList.toggle("light");
 }
 
+// Form Validation
 document.querySelector("form").addEventListener("submit", e => {
   const name = e.target[0].value.trim();
   const email = e.target[1].value.trim();
@@ -271,7 +273,6 @@ document.querySelector("form").addEventListener("submit", e => {
 // ------------------------
 // Scroll-Triggered Animations
 // ------------------------
-
 window.addEventListener("scroll", () => {
   animateAbout();
   animateSkills();
